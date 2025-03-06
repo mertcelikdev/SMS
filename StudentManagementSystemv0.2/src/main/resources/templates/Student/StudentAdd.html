@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Öğrenci Ekle</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Yeni Öğrenci Ekle</h1>
+    <form th:action="@{/students/add}" th:object="${student}" method="post">
+        <label>Ad:</label>
+        <input type="text" th:field="*{firstName}" required>
+
+        <label>Soyad:</label>
+        <input type="text" th:field="*{lastName}" required>
+
+        <label>Öğrenci Numarası:</label>
+        <input type="text" th:field="*{studentNumber}" required>
+
+        <label>Sınıf:</label>
+        <input type="number" th:field="*{grade}" required>
+
+        <button type="submit">Ekle</button>
+        <a href="/students">İptal</a>
+    </form>
+</div>
+<a href="/" class="btn">Ana Sayfaya Dön</a>
+
+</body>
+</html>

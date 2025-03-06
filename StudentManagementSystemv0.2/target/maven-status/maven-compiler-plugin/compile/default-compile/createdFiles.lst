@@ -1,0 +1,11 @@
+org\example\swe304\Model\Registration.class
+org\example\swe304\Controller\HomeController.class
+org\example\swe304\Controller\StudentController.class
+org\example\swe304\Repository\RegistrationRepository.class
+org\example\swe304\Swe304Application.class
+org\example\swe304\Model\Course.class
+org\example\swe304\Controller\CourseController.class
+org\example\swe304\Controller\RegistrationController.class
+org\example\swe304\Repository\CourseRepository.class
+org\example\swe304\Model\Student.class
+org\example\swe304\Repository\StudentRepository.class
