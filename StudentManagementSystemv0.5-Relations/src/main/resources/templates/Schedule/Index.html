@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Ders Programı</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Ders Programı</h1>
+<p>Öğrenci ID: <span th:text="${studentId}"></span></p>
+
+<!-- Eğer öğrenci hiç ders seçmemişse -->
+<p th:if="${schedules == null or schedules.isEmpty()}">Henüz kayıtlı dersiniz bulunmamaktadır.</p>
+
+<!-- Eğer öğrenci ders seçmişse -->
+<table th:if="${schedules != null and not schedules.isEmpty()}">
+  <thead>
+  <tr>
+    <th>Ders Adı</th>
+    <th>Ders Kodu</th>
+    <th>Kredi</th>
+    <th>Öğretim Üyesi</th>
+    <th>Ders Tarihi</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr th:each="schedule : ${schedules}">
+    <td th:text="${schedule.course.name}"></td>
+    <td th:text="${schedule.course.code}"></td>
+    <td th:text="${schedule.course.credit}"></td>
+    <td th:text="${schedule.course.lecturerName}"></td>
+    <td th:text="${schedule.course.courseDate}"></td>
+
+  </tr>
+  </tbody>
+</table>
+
+</body>
+</html>

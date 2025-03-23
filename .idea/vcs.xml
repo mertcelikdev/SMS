@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/StudentManagementSystemv0.3-Rest API" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/StudentManagementSystemv0.3-Rest API/StudentManagementSystemv0.2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/StudentManagementSystemv0.4-Error Catching" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/StudentManagementSystemv0.4-Error Catching/StudentManagementSystemv0.2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/StudentManagementSystemv0.5-Authentication" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/StudentManagementSystemv0.5-Authentication/StudentManagementSystemv0.2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/StudentManagementSystemv0.6-Relations" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/StudentManagementSystemv0.6-Relations/StudentManagementSystemv0.2" vcs="Git" />
+  </component>
+</project>
